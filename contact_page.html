@@ -174,51 +174,8 @@ text-align: center;
         margin-top: -167px;
         right: 0;
     }
-     /* footer */
-  .footer_1 {
-      
-      position: relative;
-      font-family: 'poppins',sans-serif;
-      background-color:#1B0339;
-      color: #ffffff;
-      
-      font-size: 30px;
-      font-weight: 600;
-      
-      letter-spacing: 0.02em;
-      text-align: left;
-      
-      /* Optional: Just for visualization */
-      }
-      .footer_left_1{
-      position: absolute;
-      }
-      .footer_right_1{
-      padding-top: 100px;
-      right: 20px;
-      }
-      .footer_right_2{  
-      position:absolute;
-      right: 0;
-      bottom: 0;
-      }
-      .foooter_text{
-      font-weight:700px;
-      font-size:48px;
-      padding-top: 50px;
-      text-align: center;
-      }
-      .blue-bg-btn {
-      background: #605FFC;
-      color: #FFFFFF;
-      text-decoration: none;
-      padding: 10px 32px 10px 32px;
-      border-radius: 32px;
-      margin-left: 3rem;
-      }
       
       
-      /*footer-section-2*/
       .footer-section-2{
       position: relative;
       background-color:rgba(210, 207, 242, 1);
@@ -229,6 +186,7 @@ text-align: center;
       padding-top: 140px;
       left: 0;
       bottom: 0;
+      position:absolute;
       }
       
       .Image_2{  
@@ -250,12 +208,27 @@ text-align: center;
       }
       
       .newsletter{
-      padding-top: 120px;
-      font-size: 23px;
+      padding-top: 130px;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 33px;
+      letter-spacing: -0.30000001192092896px;
+      text-align: left;
+      }
+      
+      .email_text{
+      width:65%;
+      opacity: 0.5px;
+      gap: 10px;
+      padding: 10px;
       }
       
       .frame_newsletter{
       padding-top: 15px;
+      text-decoration: none;
+      border: rgba(210, 207, 242, 1);
+      padding: 10px 0px 0px 0px;
+      opacity: 0px;
       }
       
       </style>
@@ -411,77 +384,79 @@ text-align: center;
     
     <br><br>  <br><br>
 
-<section class="footer-section-2">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-1">
-        <img src="images/Frame_3.png" class="Image_3 ">
-      </div>
-      <div class="col-sm-4" style="text-align: left;">
-        <img src="images/logo_1.png" class="logo_1 " alt="Image">
-        <div class="p-3">
-          Copyright © 2024
-        </div>
-        <div class="newsletter" >Subscribe to our monthly newsletter</div>
-        <div class="frame_newsletter">
-          <input class="email_text col-md-7" placeholder="Enter Email address">
-          <button class="submit_button col-md-4" style="background-color: #605FFC; color: #ffffff; text-align: center;   border-radius: 0 8px 8px 0;">Submit</button>
-        </div>
-      </div>
-      <div class="col-sm-2">
-        <h6 class="text-uppercase mb-4 font-weight-bold">Services</h6>
-            <p>
-              <a class="text" style="color: rgba(65, 72, 82, 1);">Email Marketing</a>
-            </p>
-            <p>
-              <a class="text" style="color: rgba(65, 72, 82, 1);">Campaigns</a>
-            </p>
-            <p>
-              <a class="text" style="color: rgba(65, 72, 82, 1);">Branding</a>
-            </p>
-            <p>
-              <a class="text" style="color: rgba(65, 72, 82, 1);">Offline</a>
-            </p>
-      </div>
-      <div class="col-sm-2">
-        <h6 class="text-uppercase mb-4 font-weight-bold">About</h6>
-            <p>
-              <a class="text" style="color: rgba(65, 72, 82, 1);">Our Story</a>
-            </p>
-            <p>
-              <a class="text" style="color: rgba(65, 72, 82, 1);">Benefits</a>
-            </p>
-            <p>
-              <a class="text" style="color: rgba(65, 72, 82, 1);">Team</a>
-            </p>
-            <p>
-              <a class="text" style="color: rgba(65, 72, 82, 1);">Careers</a>
-            </p>
-      </div>
-      <div class="col-sm-3">
-        <a
-           class="btn btn-floating m-1"
-           class="text-white p-2"
-           role="button"
-           ><img src="images/Back to top.png" alt="Image"></a>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <img src="images/Frame_2.png" class="Image_2 " alt="Image" >
-        <a
-               class="web_icon btn btn-floating p-2 m-1"
-               role="button"
-               ><img src="images/001-facebook.png" alt="Image"></a>
+    <section class="footer-section-2">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-1">
+            <img src="images/Frame_3.png" class="Image_3 ">
+          </div>
+          <div class="col-sm-4" style="text-align: left;">
+            <img src="images/logo_1.png" class="logo_1 " alt="Image">
+            <div class="p-3">
+              Copyright © 2024
+            </div>
+            <div class="newsletter" >Subscribe to our monthly newsletter</div>
+            <div class="frame_newsletter input-group mb-3">
+              <input type="text" class="email_text" style="border: rgba(210, 207, 242, 1);" placeholder="Enter Email address" aria-label="Enter Email address" aria-describedby="basic-addon2">
+              <div class="submit_button input-group-append" >
+                <button class="btn btn-outline-secondary" style="background-color: #605FFC; color: #ffffff; text-align: center; font-size: 15px; border-radius: 0 8px 8px 0; padding: 10px;">Submit</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Services</h6>
+                <p>
+                  <a class="text" style="color: rgba(65, 72, 82, 1);">Email Marketing</a>
+                </p>
+                <p>
+                  <a class="text" style="color: rgba(65, 72, 82, 1);">Campaigns</a>
+                </p>
+                <p>
+                  <a class="text" style="color: rgba(65, 72, 82, 1);">Branding</a>
+                </p>
+                <p>
+                  <a class="text" style="color: rgba(65, 72, 82, 1);">Offline</a>
+                </p>
+          </div>
+          <div class="col-sm-2">
+            <h6 class="text-uppercase mb-4 font-weight-bold">About</h6>
+                <p>
+                  <a class="text" style="color: rgba(65, 72, 82, 1);">Our Story</a>
+                </p>
+                <p>
+                  <a class="text" style="color: rgba(65, 72, 82, 1);">Benefits</a>
+                </p>
+                <p>
+                  <a class="text" style="color: rgba(65, 72, 82, 1);">Team</a>
+                </p>
+                <p>
+                  <a class="text" style="color: rgba(65, 72, 82, 1);">Careers</a>
+                </p>
+          </div>
+          <div class="col-sm-3">
             <a
-               class="web_icon btn btn-floating p-2 m-1"
+               class="btn btn-floating m-1"
+               class="text-white p-2"
                role="button"
-               ><img src="images/003-twitter.png" alt="Image"></a>
+               ><img src="images/Back to top.png" alt="Image"></a>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <img src="images/Frame_2.png" class="Image_2 " alt="Image" >
             <a
-               class="web_icon btn btn-floating p-2 m-1"
-               role="button"
-               ><img src="images/004-instagram.png" alt="Image"></a>
+                   class="web_icon btn btn-floating p-2 m-1"
+                   role="button"
+                   ><img src="images/001-facebook.png" alt="Image"></a>
+                <a
+                   class="web_icon btn btn-floating p-2 m-1"
+                   role="button"
+                   ><img src="images/003-twitter.png" alt="Image"></a>
+                <a
+                   class="web_icon btn btn-floating p-2 m-1"
+                   role="button"
+                   ><img src="images/004-instagram.png" alt="Image"></a>
+          </div>
+          <hr class="hr hr-blurry" />
+        </div>
       </div>
-      <hr class="hr hr-blurry" />
-    </div>
-  </div>
-</section>
+    </section>
 </body>
 </html>
