@@ -55,7 +55,16 @@ body {
   border-bottom-style: solid;
   border-bottom-color: transparent;
   opacity: 0.5;
-  transition: opacity 0.6s;
+}
+.carousel-item {
+  position: relative;
+  display: none;
+  float: left;
+  width: 100%;
+  margin-right: -100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /* transition: transform .6s ease-in-out; */
 }
 
 /* Active Button in Carousel Indicators */
@@ -487,7 +496,7 @@ color: #FFFFFF;
 }
 
 .project-text{
-font-size: 8vh;
+font-size: 56px;
 }
 @media screen and (max-width:768px) {
   #Project-Delivered .container {
@@ -579,7 +588,7 @@ background-size: 25% ,12%;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0 13px;
+  padding: 0 20px;
   gap: 10px;
   background: #ffffff;
   border: 1px solid #4f489c;
@@ -673,7 +682,7 @@ background-size: 25% ,12%;
   .frame-120,
   .frame-119 {
     max-width: 100%;
-    padding: 10px;
+    padding: 20px;
     border-radius: 50px;
   }
 
