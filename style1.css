@@ -876,11 +876,15 @@ letter-spacing: 0.02em;
 @media only screen and (max-width: 768px) {
     .help {
         font-size: 20px;
+        margin-top: -45%;
+        margin-left: 21%;
     }
 #help .blue-bg-btn {
         padding: 15px 12px;
+        font-size: 10px;
+        margin-left: 0%;
     }
-}
+    }
 
 
 
@@ -901,14 +905,21 @@ letter-spacing: 0.02em;
     letter-spacing: 0.02em;
     color: #39393a;
   }
+  .meet-team{
+    margin-top: 1%;
+  }
   
   /* Add media query for smaller screens */
   @media (max-width: 768px) {
     .meet {
       width: 80%; /* Adjust width for smaller screens */
-      left: 10%; /* Adjust left positioning */
-      top: -3%; /* Adjust top positioning */
+      left: 21%; /* Adjust left positioning */
+      top: -5%; /* Adjust top positioning */
       font-size: 24px; /* Adjust font size */
+    }
+    .meet-team{
+      margin-top: 29%;
+      margin-left: 10%;
     }
   }
   
