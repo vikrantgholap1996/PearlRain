@@ -362,7 +362,7 @@ position: absolute;
 }
 /* Section USE CASES */
 .use-cases-banner{
-  margin-top: 36%;
+  margin-top: 0%;
   margin-bottom: -14%;
 }
 .use-cases {
@@ -477,7 +477,7 @@ font-size: 56px;
 
 
 .Project-Delivered{
-  margin-top: 5%;
+  margin-top: 34%;
 background-image: url('./images/pink blob vector.png'), url('./images/Vector (3).png');
 background-position: left -10% top -100%, right top;
 background-repeat: no-repeat;
@@ -668,7 +668,7 @@ background-size: 25% ,12%;
   /* Section Digital Experience */
   /* Section Digital Experience */
   .digital-experience {
-    font-size: 32px;
+    font-size: 48px;
     font-weight: 700;
     letter-spacing: 0.02em;
     text-align: center;
