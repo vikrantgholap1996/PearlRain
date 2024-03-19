@@ -430,7 +430,7 @@
   <div class="container">
     <div class="digital-experience">Digital Experience 2.0</div>
   </div><br>
-  <div class="container align-center">
+  <div class="container align-center" id="digital-experience">
       <div class="card-group">
           <div class="card8">
             <img src="images/card1.png" class="card8-1" alt="..."> 
@@ -487,25 +487,37 @@
       </div>
   </section>
   <script>
-    // Define the target numbers
+    
     const websiteNumber = 75;
     const appsNumber = 70;
     const solutionsNumber = 30;
 
-    // Function to increment numbers
+  
     function countUp(target, elementId) {
         let currentNumber = 0;
         const interval = setInterval(() => {
             currentNumber++;
             document.getElementById(elementId).textContent = currentNumber + '+';
             if (currentNumber === target) clearInterval(interval);
-        }, 100); // Adjust the interval as needed
+        }, 100);
     }
 
-    // Call the function for each element
-    countUp(websiteNumber, 'websiteNumber');
-    countUp(appsNumber, 'appsNumber');
-    countUp(solutionsNumber, 'solutionsNumber');
+    
+    function startCounting(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                countUp(websiteNumber, 'websiteNumber');
+                countUp(appsNumber, 'appsNumber');
+                countUp(solutionsNumber, 'solutionsNumber');
+                observer.unobserve(entry.target);
+            }
+        });
+    }
+
+    const targetSection = document.querySelector('.impact');
+
+    const observer = new IntersectionObserver(startCounting);
+    observer.observe(targetSection);
 </script>
 
     <!-- Section Map -->

@@ -101,14 +101,14 @@ body {
 @media screen and (max-width: 768px) {
   /* Adjustments for Banner Text */
   .banner-text {
-    font-size: 6vw;
+    font-size: 8vw;
   }
   /* Adjustments for Banner Text1 */
   .banner-text1 {
-    font-size: 3vw;
+    font-size: 5vw;
   }
   .banner-section2nd{
-    font-size: 4vw;
+    font-size: 5vw;
   }
   
 }
@@ -452,6 +452,7 @@ color: #FFFFFF;
     .card {
         height: auto;
     }
+    
 }
 
 @media (max-width: 1440px) {
@@ -749,7 +750,16 @@ letter-spacing: 0.02em;
     padding-left: 53px;
     padding-right: 47px;
 }
-
+#digital-experience .card-group{
+  margin-left: 0;
+}
+@media (max-width: 768px){
+  #digital-experience .card-group {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 13%;
+}
+}
 .card8-2{
   background-image: url('images/pink blob vector.png');
 
