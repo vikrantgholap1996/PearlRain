@@ -7,7 +7,12 @@ body {
   margin: 0;
   padding: 0;
 }
-
+@media  (max-width:768px) {
+  body{
+    align-items: center;
+    margin-right: 0%;
+  }
+}
 /* Button with Blue Background */
 .blue-bg-btn {
   background: #605FFC;
@@ -284,12 +289,12 @@ height: 300px;
 
 
 /* SECTION (Our Services) */
-/* SECTION (Our Services) */
 .our-services {
-           
+           position: relative;
   background: #1B0339;
   padding: 50px 0;
   height: auto;
+ 
          }
 .our_service{
 
@@ -309,14 +314,15 @@ color:#E491E1;
   font-size: 46px;
   line-height: 76px;
   color: #FFFFFF;
+  margin-bottom: 20px;
 }
 
 .card {
-  position: relative;
+ 
   background: #FFFFFF;
   border: 2px solid #8B2D88;
   border-radius: 22px;
- height: 355px;
+
 }
 
 .card-title {
@@ -335,12 +341,13 @@ padding-top: 40px;
 .card-text {
 position: relative;
 font-weight: 500;
-font-size: 17px;
+font-size: 18px;
+line-height: 27px;
 letter-spacing: 0.02rem;
 color: #616165;
 
-padding-bottom: 50px;
-
+padding-top: 50px;
+padding-bottom: 20px;
 }
 .triangle{
 position: absolute;
