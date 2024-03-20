@@ -271,7 +271,7 @@
   
  <!--Section USE CASES  -->
  <section class="use-cases-banner">
-  <img src="images/Rectangle 11.png" class="Rectangle_11 ">
+  <!-- <img src="images/Rectangle 11.png" class="Rectangle_11 img-fluid "> -->
   <div class="container" style="margin-top: -37%;">
       <div class="row">
           <div class="col-md-12">
@@ -701,7 +701,7 @@
                       <span class="fs-5 fw-bold">Sayali Rane</span
                       ><br />Senior Web Developer
                     </p>
-                    <a class="align-items-center" href=""
+                    <a class="align-items-center" href="https://www.linkedin.com/in/sayali-salunkhe-rane-2398a9137/"
                       ><img src="./images/linkedin-logo.png"
                     /></a>
                   </div>
@@ -830,13 +830,25 @@
             </p>
       </div>
       <div class="col-sm-3">
-        <a
-           class="btn btn-floating m-1"
+        <div class="container">
+          <button id="scrollToTopBtn" class="btn btn-floating" style="margin-left: 20% !important; margin-top: 5%;"><img src="images/Back to top.png" alt="Image"></button>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <script>
+          $(document).ready(function () {
+            $("#scrollToTopBtn").click(function () {
+              $("html, body").animate({ scrollTop: 0 }, "slow");
+            });
+          });
+        </script><!-- <a
+           class="btn btn-floating "
            class="text-white p-2"
            role="button"
-           ><img src="images/Back to top.png" alt="Image"></a>
+           href="index.html"
+           style="margin-left: -35% !important;"
+           ><img src="images/Back to top.png" alt="Image"></a> -->
         <br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <img src="images/Frame_2.png" class="Image_2 " alt="Image" >
         <a
                class="web_icon btn btn-floating p-2 m-1"
                role="button"
