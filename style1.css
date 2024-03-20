@@ -1078,7 +1078,7 @@ background-size: 25% ,12%;
   }
   
   .email_text{
-  width:65%;
+  width:40%;
   opacity: 0.5px;
   gap: 10px;
   padding: 10px;
@@ -1092,4 +1092,4 @@ background-size: 25% ,12%;
   padding: 10px 0px 0px 0px;
   opacity: 0px;
   margin-left: 24%;
-  }
+  } 
