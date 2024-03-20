@@ -82,23 +82,46 @@ color: #8B2D88;
               .t1{
                
                 font-family: 'Poppins',sans-serif;
-font-size: 20px;
-font-weight: 400;
-line-height: 30px;
-letter-spacing: 0.02em;
-text-align: center;
-
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 30px;
+                letter-spacing: 0.02em;
+                text-align: center;
                 color: #8B2D88;
 
               }
               .t2{
                 font-family: 'Poppins',sans-serif;
-font-size: 56px;
-font-weight: 700;
-line-height: 84px;
-letter-spacing: 0.02em;
-text-align: center;
+                font-size: 56px;
+                font-weight: 700;
+                line-height: 84px;
+                letter-spacing: 0.02em;
+                text-align: center;
 
+              }
+              @media screen and (max-width: 768px)
+              {
+                .t2{
+                  font-size: 42px;
+                }
+                .mail{
+                  padding-top: 21px !important;
+                  padding-left: 130px !important;
+                  }
+                  .mail-text {
+                      margin-left: -32% !important;
+                      text-align: center;
+                      font-size: 16px !important;
+                  }
+                  .whatsapp{
+                  padding-top: 14px !important;
+                  padding-left: 125px !important;
+                  }
+                  .whatsapp-text{
+                    margin-left: -45% !important;
+                    text-align: center;
+                      font-size: 16px !important;
+                  }
               }
               .mt-3 {
         margin-top: 1rem;
@@ -111,14 +134,14 @@ text-align: center;
 
               
               .rect1, .rect2 {
-        width: 90%;
-        max-width: 546px;
-        height: 30vw; /* Adjust height relative to the width */
-        border-radius: 5%; /* Adjust border radius */
-        background: #ECEBFA;
-        margin: 20px auto; /* Center the rectangles horizontally */
-        position: relative;
-    }
+              width: 90%;
+              max-width: 546px;
+              height: 30vw; 
+              border-radius: 5%; 
+              background: #ECEBFA;
+              margin: 20px auto;
+              position: relative;
+            }
 
     .rect1 {
         position:relative;
@@ -146,6 +169,7 @@ text-align: center;
         color: #8B2D88;
         padding-top: 70px;
         text-decoration: none;
+        margin: 0%;
     }
   
     .whatsapp{
@@ -163,6 +187,7 @@ text-align: center;
         padding-top: 75px;
         padding-left: 15px;
       text-decoration: none; /* Remove underline */
+      margin: 0%;
     }
     .contact2_left{
         position: absolute;
