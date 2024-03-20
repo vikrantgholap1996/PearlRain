@@ -952,6 +952,10 @@ background-size: 25% ,12%;
   font-family: 'poppins',sans-serif;
   background-color:#1B0339;
   color: #ffffff;
+  background-image: url('images/footer_right_1.png'), url('images/footer_right_2.png');
+  background-position: right 12% top 17%, right bottom;
+  background-repeat: no-repeat;
+  background-size: 5% ,12%;
   
   font-size: 30px;
   font-weight: 600;
