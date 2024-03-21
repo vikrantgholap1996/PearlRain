@@ -701,9 +701,8 @@ background-size: 25% ,10%;
 }
 
   /* Section Digital Experience */
-  /* Section Digital Experience */
   .digital-experience {
-    font-size: 48px;
+    font-size: 32px;
     font-weight: 700;
     letter-spacing: 0.02em;
     text-align: center;
@@ -712,7 +711,7 @@ background-size: 25% ,10%;
 .card8 {
     width: 262px;
     height: 340px;
-    
+    text-align: center;
 }
 
 .card-body_ {
@@ -720,43 +719,43 @@ background-size: 25% ,10%;
 }
 .card8-1{
     background: #270552;
-    padding-top: 50px;
+    padding-top: 60px;
     background-size: cover;
-    background-image: url('images/AI_bg.png');
+    background-image: url('AI_bg.png');
 }
 .card8-2{
    background: #4F489C;
-   padding-top: 40px;
-   background-image: url('images/card-2-bg.png');
+   padding-top: 30px;
+   background-image: url('card-2-bg.png');
   padding-left: 0px;
    background-position: right ;
 }
 .card8-3{
     background: #270552;
-    background-image: url('images/card-3-bg.png');
-    padding-top: 30px;
+    background-image: url('card-3-bg.png');
+    padding-top: 70px;
     background-size: cover;
 }
 .card8-4{
     background: #4F489C;
-    background-image: url('images/card-4-bg.png');
-    padding-top: 20px;
+    background-image: url('card-4-bg.png');
+    padding-top: 30px;
     background-position: left left ;
 
 }
 .card8-5{
     background: #270552;
-    background-image: url('images/card-5-bg.png');
+    background-image: url('card-5-bg.png');
     background-size: cover;
-    padding-top: 20px;
+    padding-top: 40px;
 }
-.text-digital {
+.text {
     color: white;
     margin-top: 50px;
     font-family: 'Poppins', sans-serif;
     font-size: 32px;
     font-weight: 700;
-    line-height: 48px;
+    line-height: 50px;
     letter-spacing: 0.02em;
     text-align: center;
    
@@ -764,25 +763,24 @@ background-size: 25% ,10%;
 
 .digital {
     position: relative;
-    margin: 7%;
+    margin-top: 20px;
 }
 
 @media (min-width: 576px) {
     .card8 {
         width: 45%;
-        margin: 0px;
-        margin-top: -7%;
     }
     
+    .text {
+        font-size: 28px;
+        line-height: 40px;
+    }
 }
-#digital .container{
-  margin-left: 0%;
-}
-@media (max-width:768)
-{
-  .digital{
-    margin-left: 0%;
-  }
+
+@media (max-width: 576px) {
+    .card8 {
+        width: 100%;
+    }
 }
 
   /* Section Impact 75+ */
@@ -926,7 +924,6 @@ background-size: 25% ,10%;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 2%;
-    margin-left: 8%;
   }
   
   .first-image a,
@@ -935,21 +932,21 @@ background-size: 25% ,10%;
   .fourth-image a {
     color: #0d6efd;
     text-decoration: none;
-    margin-left: 29%;
+    margin-left: 30%;
     margin-top: 9%;
   }
   
   .carousel-indicators {
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 8px;
     left: 0;
     z-index: 2;
     display: flex;
     justify-content: center;
     padding: 0;
-    margin-right: 15%;
-    margin-bottom: -2rem;
+    
+    
     list-style: none;
   }
   
@@ -975,7 +972,7 @@ background-size: 25% ,10%;
   }
   .meet-team {
     margin-top: 20% !important;
-    margin-left: 10%;
+    
   }
   .meet-section {
     flex-wrap: wrap;
@@ -985,7 +982,7 @@ background-size: 25% ,10%;
   .second-image,
   .third-image,
   .fourth-image {
-    width: 50%;
+    width: auto;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
