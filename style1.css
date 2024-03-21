@@ -508,17 +508,7 @@ background-position: left -12% top 90%, right top !important;
 background-size: 25%, 12% !important;
 }
 }
-@media only screen and (max-width: 767px) {
-  .row.align-items-start,
-  .row.align-items-center {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .col {
-    width: 100%;
-  }
-}
+
 .Project-Delivered{
   margin-top: 34%;
 background-image: url('./images/pink blob vector.png'), url('./images/Vector (3).png');
