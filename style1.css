@@ -132,163 +132,129 @@ body {
 }
 
 /* Section OUR CORE COMPETENCIES  */
-    .core-competencies{
-        font-size: 20px;
-        line-height: 30px;
-        color: #8b2d88;
-        padding-left: 50px;
-    }
-    .our-core {
-      margin-top: 5%;
-    background-image: url('./images/Slide2_left.png'), url('./images/Slide2_right.png');
-    background-position: left top 10%, right top;
-    background-repeat: no-repeat;
-    background-size: 9% ,12%;
+.our-core {
+margin-top: 5%;
+background-image: url('./images/Slide2_left.png'), url('./images/Slide2_right.png');
+background-position: left top 10%, right top;
+background-repeat: no-repeat;
+background-size: 9%, 12%;
 }
-.research-design-optimize {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 72px;
-  letter-spacing: 0.02em;
-  color: #39393A;
-  padding-left: 50px;
+.core-competencies{
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+color: #8b2d88;
+
 }
 
-/* Responsive adjustments */
-@media screen and (max-width: 767px) {
-  .core-competencies{
-    font-size: 15px;
-    margin-left: -5%
-  }
-  .research-design-optimize {
-      font-size: 24px;
-      line-height: 54px;
-      padding-left: 20px;
-  }
+.research-design-optimize{
+font-style: normal;
+font-weight: 700;
+font-size: 38px;
+line-height: 54px;
+letter-spacing: 0.02em;
+color: #39393A;
+
+
 }
 
-@media screen and (min-width: 768px) and (max-width: 1440px) {
-  .research-design-optimize {
-      font-size: 44px;
-      line-height: 66px;
-      padding-left: 30px;
-  }
-}
-
-@media screen and (min-width:768px) and (max-width:1440px){
-  .research-design-optimize {
-      font-size: 48px;
-      line-height: 72px;
-      padding-left: 50px; 
-  }
-}
-
-
-    .text-container {
-        font-size: 25px;
-        font-weight: 600;
-        line-height: 38px;
-        letter-spacing: 0.02em;
-        text-align: center;
-        padding-top: 40px;
-        color: #FFFFFF;
-    }
-
-    .image-container{
-        width: 60.89px;
-        height: 69.68px;
-        padding-top: 30px;
-    }
-   
-    
-    .shape1 {
-        position: absolute;
-       z-index: 0;
-
-    }
-    .shape1_1{
-      position:relative;
-      padding-top:23%;
-      padding-left:33%;
-      z-index: 1;
-
-    }
-    .shape2 {
-        position: absolute;
-       z-index: 0;
-
-    }
-    .shape2_2{
-        z-index: 1;
-        position: relative;
-        padding-top:23%;
-        padding-left: 68px;
-    }
-    .shape3{
-        position: absolute;
-        z-index: 0;
-    }
-    .shape3_3{
-        z-index: 1;
-        position: relative;
-        padding-top:20%;
-        padding-left: 95px;
-    }
-    .shape4{
-        position: absolute;
-        z-index: 0;
-    }
-    .shape4_4{
-        z-index: 1;
-        position: relative;
-        padding-top:25%;
-        padding-left: 89px;
-    }
-    .shape5{
-        position: absolute;
-        z-index: 0;
-    }
-    .shape5_5{
-        z-index: 1;
-        position: relative;
-        padding-top:17%;
-        padding-left: 95px;
-    }
-    .text-below {
-       z-index: 1;
-position: relative;
-width: 180px;
-height: 97px;
-padding-left: 26px;
-font-weight: 600;
+.text-container {
 font-size: 25px;
+font-weight: 600;
 line-height: 38px;
+letter-spacing: 0.02em;
 text-align: center;
-letter-spacing: 0.02em;
+padding-top: 40px;
 color: #FFFFFF;
-    }
-    .text-below3 {
-       z-index: 1;
-position: relative;
+}
 
-padding-left: 68px;
-font-weight: 600;
-font-size: 25px;
+.image-container{
+width: 60.89px;
+height: 69.68px;
+padding-top: 30px;
 
-letter-spacing: 0.02em;
-color: #FFFFFF;
-    }   
- .Slide2_left{
-    position: absolute;
-    padding-top: 31px;
-    height: 200px;
- }
+}
+
+.shape-container {
+  position: relative;
+  width: 100%; 
+  height: 100%; 
+}
+
+.shape1_1 {
+  position: absolute;
+  top: 41px;
+  left: 68px;
+  background-size: cover; /* or 'contain' depending on your preference */
+  background-repeat: no-repeat;
+}
+
+.shape2_2{
+position: absolute;
+  top: 41px;
+  left: 68px;
+  background-size: cover; /* or 'contain' depending on your preference */
+  background-repeat: no-repeat;
+}
+
+.shape3_3{
+position: absolute;
+  top: 29px;
+  left: 97px;
+  background-size: cover; /* or 'contain' depending on your preference */
+  background-repeat: no-repeat;
+}
+
+.shape4_4{
+position: absolute;
+  top: 41px;
+  left: 68px;
+  background-size: cover; /* or 'contain' depending on your preference */
+  background-repeat: no-repeat;
+}
+
+.shape5_5{
+position: absolute;
+  top: 41px;
+  left: 68px;
+  background-size: cover; /* or 'contain' depending on your preference */
+  background-repeat: no-repeat;
+}
+.text-below {
+position: absolute;
+  bottom: 81px;
+  left: 53px;
  
- .Slide2_right{
-height: 300px;
- }
+  text-align: center;
+  font-weight: 600;
+  font-size: 25px;
+  color: #FFFFFF;
+ 
+}
+.text-below3 {
+position: absolute;
+bottom: 36%; /* Adjust the bottom position relative to the container's height */
+left: 48%; /* Adjust the left position relative to the container's width */
+transform: translateX(-50%);
+font-weight: 600;
+font-size: 25px; /* Adjust font size using viewport units */
+color: #FFFFFF;
+width: 100%; /* Ensure the text spans the entire width of the shape-container */
+text-align: center; /* Center-align the text */
+}
 
+
+.text-below4 {
+position: absolute;
+  bottom: 100px;
+  left: 66px;
+
+  text-align: center;
+  font-weight: 600;
+  font-size: 26px;
+  color: #FFFFFF;
+ 
+} 
 
 
 
@@ -480,17 +446,41 @@ color: #FFFFFF;
 .project-text{
 font-size: 60px;
 }
+.across {
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+  font-size: 26px !important;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #8b2d88;
+}
 @media screen and (max-width:768px) {
   #Project-Delivered .container {
     position: relative;
     margin-top: 7rem !important;
   }
 .project-text{
-  font-size: 2vh;
+  font-size: 20px;
 }
 }
 
-
+@media (min-width:768px) and (max-width:1000px) {
+  #Project-Delivered .container {
+    position: relative;
+    margin-top: 7rem !important;
+  }
+.project-text{
+  font-size: 36px;
+}
+.across{
+  font-size: 20px !important;
+}
+}
 .Project-Delivered{
   margin-top: 34%;
 background-image: url('./images/pink blob vector.png'), url('./images/Vector (3).png');
@@ -543,19 +533,7 @@ background-size: 25% ,12%;
   border-radius: 21px;
 }
 
-.across {
-  width: 100%;
-  max-width: 100%;
-  margin: auto;
-  font-family: "Poppins", sans-serif;
-  font-size: 26px !important;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 30px;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: #8b2d88;
-}
+
 
  .frame-115,
 .frame-117,
@@ -656,7 +634,7 @@ background-size: 25% ,12%;
   margin: 6% 0;
 }
 
-@media only screen and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1000px) {
   .frame-115,
   .frame-117,
   .frame-118,
@@ -811,6 +789,7 @@ background-size: 25% ,12%;
     position: relative;
     font-family: "poppins", sans-serif;
     background-color: #591757;
+    background-size: cover;
     color: #ffffff;
     font-size: 36px;
     font-weight: 600;
@@ -844,7 +823,7 @@ background-size: 25% ,12%;
 .img-help{
   margin-left: -12%;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
     .help {
         font-size: 27px;
         margin-top: -13%;
@@ -945,7 +924,7 @@ background-size: 25% ,12%;
   .carousel-control-prev {
     left: -36px;
   }
-  @media (min-width: 435px)and (max-width: 900px) {
+  @media (min-width: 435px)and (max-width: 1000px) {
   .meet {
     width: 80%;
     left: 10%;
