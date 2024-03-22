@@ -102,7 +102,7 @@ body {
 
 /* Banner Text1 */
 .banner-text1 {
-  font-size: 24px;
+  font-size: 1.5vw;
   color: #39393A;
   font-weight: 400;
   line-height: 36px;
@@ -111,7 +111,7 @@ body {
   margin: 2.9%;
 }
 .banner-section2nd{
-  font-size: 36px;
+  font-size: 2.8vw;
   color: #39393A;
 }
 
@@ -133,7 +133,7 @@ body {
 
 /* Section OUR CORE COMPETENCIES  */
 .our-core {
-  margin-top: 5%;
+  margin-top: 0%;
   background-image: url('./images/Slide2_left.png'), url('./images/Slide2_right.png');
   background-position: left top 10%, right top;
   background-repeat: no-repeat;
@@ -150,9 +150,9 @@ body {
   .research-design-optimize{
       font-style: normal;
       font-weight: 700;
-      font-size: 61px;
-      line-height: 83px;
-      letter-spacing: 0.02em;
+      font-size: 48px;
+      line-height: 72px;
+      letter-spacing: 2%;
       color: #39393A;
      
      
@@ -260,27 +260,42 @@ body {
           color: #FFFFFF;
          
   } 
-  @media screen and (max-width: 769px){
+  .our-core1{
+    margin: 0%;
+  }
+  @media (max-width: 769px){
   .our-core{
     background-position: left top 61%, right top;
   background-repeat: no-repeat;
   background-size: 31%, 48%;
   }
-  
+  .our-core1 .row{
+    margin-left: 15%;
+  }
     .research-design-optimize{
     font-size: 24px;
     line-height: 35px;
   }
   }
 
-
+  @media screen and (min-width:769) and (max-width: 1200px){
+    .our-core{
+      background-position: left top 61%, right top;
+    background-repeat: no-repeat;
+    background-size: 31%, 48%;
+    }
+    .our-core1 .row{
+      margin-left: 15%;
+    }
+  }
 
 
 /* SECTION (Our Services) */
 /* SECTION (Our Services) */
 .our-services {
            
-  background: #1B0339;
+  background-image: url('./images/Our Services.jpg');
+  background-size: cover;
   padding: 50px 0;
   height: auto;
          }
@@ -333,25 +348,14 @@ padding-top: 40px;
 .card-text {
 position: relative;
 font-weight: 500;
-font-size: 17px;
+font-size: 18px;
 letter-spacing: 0.02rem;
 color: #616165;
 
-padding-bottom: 50px;
+padding-top: 15px;
 
 }
-.triangle{
-position: absolute;
-width: 789.91px;
-height: 562.32px;
-right: 0px; 
-}
-.top_left{
-position: absolute;
-  width: 599px;
-  left: -68px;
-  opacity: 0.12;
-}
+
 /* Section USE CASES */
 .use-cases-banner{
 
@@ -520,7 +524,7 @@ margin-top: 30%;
   max-width: 100%;
   margin: auto;
   opacity: 1;
-  border: 2px solid #8b2d88;
+  border: 1px groove #8b2d88;
   border-radius: 21px;
 }
 
@@ -715,7 +719,7 @@ background-size: 25%, 12% !important;
 
   /* Section Digital Experience */
   .digital-experience {
-    font-size: 32px;
+    font-size: 40px;
     font-weight: 700;
     letter-spacing: 0.02em;
     text-align: center;
@@ -842,68 +846,66 @@ background-size: 25%, 12% !important;
   /* Section Help */
   .help {
     position: relative;
+    height: 186px;
     font-family: "poppins", sans-serif;
     background-color: #591757;
     background-size: cover;
-    color: #ffffff;
-    font-size: 36px;
+  background-image: url('./images/help_left.png'), url('./images/help_right.png');
+  background-position: left top 10%, right bottom;
+  background-repeat: no-repeat;
+  background-size: 22%, 21%;
+}
+.help-text{
+  color: #ffffff;
+    font-size: 2.5vw;
     font-weight: 600;
     letter-spacing: 0.02em;
     text-align: left;
     padding: 20px;
     box-sizing: border-box;
-}
-.bg_left{
-  position: relative;
-  left: -37px;
-  top:-16px
-  
-}
-.bg_right {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    margin-top: 2%;
 }
 
 #help .blue-bg-btn {
     background: #605ffc;
     color: #ffffff;
     text-decoration: none;
-    padding: 10px 76px;
+    padding:10px 32px 10px 32px;
     border-radius: 32px;
     margin-top: 20px;
     display: inline-block;
-    font-size: 26px;
+    font-size: 1.5vw;
 }
 .img-help{
-  margin-left: -15%;
+  margin-left: 10%;
+  
 }
 @media screen and  (max-width: 768px) {
-  .help {
-    font-size: 25px;
-    margin-top: -13%;
+  .help-text {
+    
+    margin-top: 3%;
     
 }
-  #help .blue-bg-btn {
-    padding: 15px 51px;
-    font-size: 14px;
-    margin-left: 0%;
+#help .blue-bg-btn {
+    
+    
+    margin-left: 15%;
 }
 }
 
 @media (min-width: 768px)  and (max-width: 1100px) {
-    .help {
-        font-size: 25px;
-        margin-top: -13%;
+    .help-text {
+        
+        margin-top: 3%;
         
     }
 #help .blue-bg-btn {
         padding: 15px 12px;
-        font-size: 10px;
+       
         margin-left: 0%;
     }
     .img-help{
-      margin-left: -19%;
+      margin-left: 10%;
     }
     }
 

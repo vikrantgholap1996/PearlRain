@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      /* Body */
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      @media (max-width: 768px) {
+        body {
+          visibility: visible;
+          align-items: center;
+          margin-right: 0%;
+        }
+      }
+      /* Button with Blue Background */
+      .blue-bg-btn {
+        background: #605ffc;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 10px 32px 10px 32px;
+        border-radius: 32px;
+        margin-left: 1rem;
+        display: inline-block;
+      }
+
+      /* Navigation Link */
+      .nav-link {
+        font-size: 16px;
+        color: #000000;
+        margin: 0 1rem;
+      }
+
+      /* Active Navigation Link in Navbar Section */
+      .navbar-section .nav-link.active {
+        color: #8e2975;
+      }
+
+      /* Carousel Indicators */
+      .carousel-indicators [data-bs-target] {
+        box-sizing: content-box;
+        flex: 0 1 auto;
+        width: 20px;
+        height: 2px;
+        padding: 0px;
+        margin-right: 3px;
+        margin-left: 3px;
+        text-indent: -999px;
+        cursor: pointer;
+        background-color: rgb(255, 255, 255);
+        background-clip: padding-box;
+        border-width: 5px 0px;
+        border-right-style: initial;
+        border-left-style: initial;
+        border-right-color: initial;
+        border-left-color: initial;
+        border-image: initial;
+        border-top-style: solid;
+        border-top-color: transparent;
+        border-bottom-style: solid;
+        border-bottom-color: transparent;
+        opacity: 0.5;
+      }
+      .carousel-item {
+        position: relative;
+        display: none;
+        float: left;
+        width: 100%;
+        margin-right: -100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        /* transition: transform .6s ease-in-out; */
+      }
+
+      /* Active Button in Carousel Indicators */
+      .carousel-indicators button.active {
+        color: #8b2d88;
+        width: 60px;
+        height: 2px;
+        border-radius: 50%;
+        padding: 0;
+        margin: 0 5px;
+        opacity: 1;
+      }
+      @media (max-width: 991.98px) {
+        .banner-section2 .container-fluid {
+          flex-direction: column;
+        }
+
+        .banner-section2 .row {
+          flex-direction: column-reverse;
+        }
+      }
+
+      /* Banner Text */
+      .banner-text {
+        font-size: 4.5vw;
+        margin: 0;
+        color: #39393a;
+      }
+
+      /* Banner Text1 */
+      .banner-text1 {
+        font-size: 24px;
+        color: #39393a;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        margin: 2.9%;
+      }
+      .banner-section2nd {
+        font-size: 36px;
+        color: #39393a;
+      }
+
+      /* Media Query for Screen Width <= 768px */
+      @media screen and (max-width: 768px) {
+        /* Adjustments for Banner Text */
+        .banner-text {
+          font-size: 8vw;
+        }
+        /* Adjustments for Banner Text1 */
+        .banner-text1 {
+          font-size: 5vw;
+        }
+        .banner-section2nd {
+          font-size: 5vw;
+        }
+      }
+    </style>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          style="background: #8b2d88; border-radius: 20px"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          class="b1 active"
+          style="background: #8b2d88; border-radius: 20px"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <section class="banner-section">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-6 d-flex align-items-center">
+                  <div class="col-md-12">
+                    <div class="2nd-content mx-0" style="background: #f5f3ff">
+                      <p class="ms-5 fw-bold lh-1 banner-text">
+                        Redefining<br />Digital Excellence
+                      </p>
+                      <p class="ms-5 banner-text1">
+                        Guiding your digital transformation journey
+                      </p>
+                      <div>
+                        <br />
+                        <a href="contact_page.html" class="blue-bg-btn ms-5"
+                          >Get Started Today</a
+                        >
+                      </div>
+                      <br />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="banner-image">
+                    <img
+                      src="images/banner-image-icon.png"
+                      class="img-fluid"
+                      alt="banner-image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="carousel-item">
+          <section class="banner-section2" style="background: #f5f3ff">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="banner-image">
+                    <img
+                      src="images/OBJECTS.png"
+                      class="img-fluid"
+                      alt="banner-image"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-6 d-flex align-items-center">
+                  <div class="col-md-12">
+                    <div
+                      class="2nd-content mx-0"
+                      style="color: #39393a; background: #f5f3ff"
+                    >
+                      <p class="banner-section2nd">
+                        <span style="font-weight: 600"
+                          >We Bring
+                          <span class="highlight-text" style="color: #8b2d88"
+                            >Design and Technology<br /></span
+                          >Interventions Which Help Craft<br
+                        /></span>
+                        <strong
+                          ><em class="digital-text"
+                            >Digital Customer Experiences <br />&amp; Amplify
+                            Business Impact</em
+                          ></strong
+                        >
+                      </p>
+                      <div>
+                        <br />
+                        <a href="contact_page.html" class="blue-bg-btn ms-0"
+                          >Get In Touch With Us</a
+                        >
+                      </div>
+                      <br /><br />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
