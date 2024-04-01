@@ -1032,74 +1032,44 @@ background-size: 25%, 12% !important;
   
   }
   /* Section Help */
-  .help {
-    position: relative;
-    height: 186px;
-    font-family: "poppins", sans-serif;
-    background-color: #591757;
+  .cta-section {
+    background-image: url(../images/get-help-bg.jpg);
     background-size: cover;
-  background-image: url('./images/help_left.png'), url('./images/help_right.png');
-  background-position: left top 10%, right bottom;
+    background-repeat: no-repeat;
+}
+.home-map-section::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100px;
+  height: 200px;
+  background-image: url(../images/gradient-circle-left.png);
+  background-size: contain;
   background-repeat: no-repeat;
-  background-size: 22%, 21%;
+  background-position: right top;
+  z-index: -1;
 }
-.help-text{
-  color: #ffffff;
-    font-size: 2.5vw;
-    font-weight: 600;
-    letter-spacing: 0.02em;
-    text-align: left;
-    padding: 20px;
-    box-sizing: border-box;
-    margin-top: 2%;
+.home-map-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  background-image: url(../images/fade-circle-right.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right top;
+  z-index: -1;
 }
-
-#help .blue-bg-btn {
-    background: #605ffc;
-    color: #ffffff;
-    text-decoration: none;
-    padding:10px 32px 10px 32px;
-    border-radius: 32px;
-    margin-top: 20px;
-    display: inline-block;
-    font-size: 1.5vw;
+.cta-header {
+  margin-bottom: 0;
+  font-size: 32px;
+  color: #fff;
+  padding-left: 1.5rem;
+  font-weight: 600;
 }
-.img-help{
-  margin-left: 10%;
-  
-}
-@media screen and  (max-width: 768px) {
-  .help-text {
-    
-    margin-top: 3%;
-    
-}
-#help .blue-bg-btn {
-    
-    
-    margin-left: 15%;
-}
-}
-
-@media (min-width: 768px)  and (max-width: 1100px) {
-    .help-text {
-        
-        margin-top: 3%;
-        
-    }
-#help .blue-bg-btn {
-        padding: 15px 12px;
-       
-        margin-left: 0%;
-    }
-    .img-help{
-      margin-left: 10%;
-    }
-    }
-
-
-
-
   /* Section Meet */
   .Section-Meet {
     margin-top: 14%;
@@ -1209,63 +1179,26 @@ background-size: 25%, 12% !important;
 
 
   /* footer */
- /* footer section 1*/
- .footer_1 {
-      
-  position: relative;
-  font-family: 'poppins',sans-serif;
-  background-color:#1B0339;
-  color: #ffffff;
-  background-image: url('images/footer_right_1.png'), url('images/footer_right_2.png');
-  background-position: right 12% top 17%, right bottom;
-  background-repeat: no-repeat;
-  background-size: 5% ,12%;
-  
-  font-size: 30px;
-  font-weight: 600;
-  
-  letter-spacing: 0.02em;
-  text-align: left;
-  
-  }
-  .footer_left_1{
-  position: absolute;
-  }
-  .footer_right_1{
-  padding-top: 50px;
-  right: 20px;
-  }
-  .footer_right_2{  
-  position:absolute;
-  right: 0;
-  bottom: 0;
-  }
-  .foooter_text{
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 72px;
-    letter-spacing: 0.02em;
-    text-align: center;
-    width: 100%;
-    padding-top: 50px;
-  }
-  
-  .get-started{
-    padding-top: 50px;
-    text-align: center;
-    padding-bottom: 50px;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 30px;
-    letter-spacing: 0.02em;
-  }
-  @media screen and (max-width:768px) {
-    .foooter_text{
-      font-size: 24px;
-      line-height: 35px;
-    }
-    
-  }
+  .top-footer-section {
+    background-image: url(../images/top-footer-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 400px; */
+    position: relative;
+}
+.top-footer-content {
+  width: 80%;
+  margin: auto;
+  height: 100%;
+  text-align: center;
+}
+.top-footer-content h3 {
+  font-size: 48px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  line-height: 1.5;
+}
   
   /* /footer-section-2/ */
   .footer-section {
@@ -1365,4 +1298,25 @@ background-size: 25%, 12% !important;
     .footer-logo-module {
         padding-left: 0;
     }
+}
+
+.footer-contact-module a {
+  text-decoration: none;
+  color: #8B2D88;
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 5px;
+  display: block;
+}
+
+.footer-contact-module h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #414852;
+  padding: 1rem 0 0.5rem;
+}
+.footer-contact-module ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }

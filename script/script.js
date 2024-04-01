@@ -72,17 +72,6 @@ $(document).ready(function () {
         ]
     });
 
-    // Home tabs section
-    $('.panel .nav-tabs').on('click', '.tab-title', function (e) {
-        var tab = $(this).parent(),
-            tabIndex = tab.index(),
-            tabPanel = $(this).closest('.panel'),
-            tabPane = tabPanel.find('.tab-pane').eq(tabIndex);
-        tabPanel.find('.active').removeClass('active');
-        tab.addClass('active');
-        tabPane.addClass('active');
-    });
-
 
     // Counter Section
     $('.counter').each(function () {
@@ -98,34 +87,47 @@ $(document).ready(function () {
     });
 });
 
-// accordion
-// Wait for the DOM content to be fully loaded
-document.addEventListener("DOMContentLoaded", function () {
-    // Select all elements with the class 'accordion-item'
-    const accordionItems = document.querySelectorAll('.accordion-item');
 
-    // Iterate over each accordion item
-    accordionItems.forEach(item => {
-        // Find the header and content elements within the current item
-        const header = item.querySelector('.accordion-header');
-        const content = item.querySelector('.accordion-content');
 
-        // Add a click event listener to the header
-        header.addEventListener('click', () => {
-            // Iterate over each accordion item again to close others
-            accordionItems.forEach(otherItem => {
-                // Check if the current item is not the clicked one
-                if (otherItem !== item) {
-                    // Remove the 'active' class from other item's content
-                    otherItem.querySelector('.accordion-content').classList.remove('active');
-                    otherItem.querySelector('.accordion-header').classList.remove('active');
-                }
-            });
 
-            // Toggle the 'active' class for the content of the clicked item
-            content.classList.toggle('active');
-            header.classList.toggle('active');
-        });
+$('.panel .nav-tabs').on('click', '.tab-title', function (e) {
+    var tab = $(this).parent(),
+        tabIndex = tab.index(),
+        tabPanel = $(this).closest('.panel'),
+        tabPane = tabPanel.find('.tab-pane').eq(tabIndex);
+    tabPanel.find('.active').removeClass('active');
+    tab.addClass('active');
+    tabPane.addClass('active');
+});
+
+
+
+$(document).ready(function () {
+    // Activate the first tab and accordion by default
+    $(".nav-tabs a:first").tab("show");
+    $(".accordion .accordion-item:first").addClass("active");
+
+    // Tab click event
+    $(".nav-tabs a").click(function () {
+        $(this).tab("show");
+    });
+
+    // Accordion click event
+    $(".accordion-header").click(function () {
+        var accordionItem = $(this).closest('.accordion-item');
+        var isItemActive = accordionItem.hasClass("active");
+
+        // Remove active class from all accordion items
+        $(".accordion-item").removeClass("active");
+        $(".accordion-content").slideUp("fast");
+        $(".accordion-header").removeClass("active").find("::after").text("+");
+
+        // Toggle active class for the clicked accordion item
+        if (!isItemActive) {
+            accordionItem.addClass("active");
+            accordionItem.find(".accordion-content").slideDown("fast");
+            $(this).addClass("active").find("::after").text("-");
+        }
     });
 });
 
