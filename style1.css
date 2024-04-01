@@ -1033,7 +1033,7 @@ background-size: 25%, 12% !important;
   }
   /* Section Help */
   .cta-section {
-    background-image: url(../images/get-help-bg.jpg);
+    background-image: url("./images/get-help-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -1044,7 +1044,7 @@ background-size: 25%, 12% !important;
   left: 0;
   width: 100px;
   height: 200px;
-  background-image: url(../images/gradient-circle-left.png);
+  background-image: url("./images/gradient-circle-left.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right top;
@@ -1057,18 +1057,18 @@ background-size: 25%, 12% !important;
   right: 0;
   width: 200px;
   height: 200px;
-  background-image: url(../images/fade-circle-right.png);
+  background-image: url("./images/fade-circle-right.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right top;
   z-index: -1;
 }
 .cta-header {
-  margin-bottom: 0;
-  font-size: 32px;
-  color: #fff;
-  padding-left: 1.5rem;
-  font-weight: 600;
+    margin-bottom: 0;
+    font-size: 32px;
+    color: #fff;
+    padding-left: 1.5rem;
+    font-weight: 600;
 }
   /* Section Meet */
   .Section-Meet {
